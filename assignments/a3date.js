@@ -1,3 +1,5 @@
+const btn = document.querySelector("button");
+
 function showTime(){
     let time = new Date();
     let hour = time.getHours();
@@ -17,10 +19,11 @@ function showTime(){
     min = min < 10 ? "0" + min : min;
     sec = sec < 10 ? "0" + sec : sec;
   
-    let currentTime = hour + ":" 
-            + min + ":" + sec + am_pm;
+    let currentTime = hour + ":" + min + ":" + sec + am_pm;
   
-    document.getElementById("clock")
-            .innerHTML = currentTime;
+    document.getElementById("clock").innerHTML = currentTime;
 }
-setInterval(showTime, 1000);
+
+btn.addEventListener("click", () => {
+    showTime()
+});
