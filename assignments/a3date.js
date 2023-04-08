@@ -1,4 +1,3 @@
-setInterval(showTime, 1000);
 function showTime(){
     let time = new Date();
     let hour = time.getHours();
@@ -24,4 +23,3 @@ function showTime(){
     document.getElementById("clock")
             .innerHTML = currentTime;
 }
-showTime();
