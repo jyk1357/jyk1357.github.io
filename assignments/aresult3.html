@@ -8,20 +8,18 @@
         This is the automatic clock:<br>
         <strong>
             <script>
-                setInterval("document.getElementById('showTime').innerHTML = Date()", 1000);
+                setInterval("document.getElementById('autoTime').innerHTML = Date()", 1000);
             </script>
-            <p id="showTime"></p>
+            <p id="autoTime"></p>
         </strong>
     </h3>
     <h3>
         This is the manual clock:<br>
         <strong>
-            <script>
-                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-                    Display Date and Time.
-                </button>
-                <p id="demo"></p>
-            </script>
+            <button type="button" onclick="document.getElementById('manualTime).innerHTML = Date()">
+                Display Date and Time.
+            </button>
+            <p id="manualTime"></p>
         </strong>
     </h3>
     <p>
