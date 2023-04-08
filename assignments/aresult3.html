@@ -4,14 +4,38 @@
     <h1>
         Assignment 3 Results<br>
     </h1>
-    <h3>
-        This element will disappear and reappear.<br>
-    </h3>
-    <p id="clock"></p>
+    <p>
+        This is the clock:<br>
+    </p>
     <script>
-        const d = new Date();
-        document.getElementById("clock").innerHTML = d;
+        function showTime(){
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM"
+            }
+            if (hour == 0){
+                hour = 12;
+                am_pm = "AM";
+            }
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+        
+            let currentTime = hour + ":" 
+                    + min + ":" + sec + am_pm;
+        
+            document.getElementById("clock")
+                    .innerHTML = currentTime;
+        }
     </script>
+    <button onclick="showTime()">Show the Time</button>
+    <div id="my-div"></div>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
     </p>

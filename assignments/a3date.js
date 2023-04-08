@@ -23,3 +23,4 @@ function showTime(){
     document.getElementById("clock")
             .innerHTML = currentTime;
 }
+setInterval(showTime, 1000);
