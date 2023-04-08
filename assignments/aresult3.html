@@ -7,11 +7,10 @@
     <h3>
         This element will disappear and reappear.<br>
     </h3>
-    <p>
-        <script type = "text/javascript" src="a3date.js"></script>
-        Click the following button to see the current time<br>
-    </p>
-    <button onclick="showTime()">Show Time</button>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
     </p>
