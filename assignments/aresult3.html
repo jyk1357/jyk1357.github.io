@@ -7,8 +7,8 @@
     <p>
         This is the clock:<br>
     </p>
-    <script>
-        function showTime(){
+    <script type="text/javascript">
+        (function showTime(){
             let time = new Date();
             let hour = time.getHours();
             let min = time.getMinutes();
@@ -32,9 +32,9 @@
         
             document.getElementById("clock")
                     .innerHTML = currentTime;
-        }
-    </script>
-    <button onclick="showTime()">Show the Time</button>
+        })
+        setInterval(showTime(), 1000);
+    </script>>
     <div id="my-div"></div>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
