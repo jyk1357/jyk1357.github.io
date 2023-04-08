@@ -4,15 +4,26 @@
     <h1>
         Assignment 3 Results<br>
     </h1>
-    <p>
-        This is the clock:<br>
-    </p>
-    <strong>
-        <script>
-            setInterval("document.getElementById('showTime').innerHTML = Date()", 1000);
-        </script>
-        <p id="showTime"></p>
-    </strong>
+    <h3>
+        This is the automatic clock:<br>
+        <strong>
+            <script>
+                setInterval("document.getElementById('showTime').innerHTML = Date()", 1000);
+            </script>
+            <p id="showTime"></p>
+        </strong>
+    </h3>
+    <h3>
+        This is the manual clock:<br>
+        <strong>
+            <script>
+                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                    Display Date and Time.
+                </button>
+                <p id="demo"></p>
+            </script>
+        </strong>
+    </h3>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
     </p>
