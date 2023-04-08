@@ -22,7 +22,13 @@
     <h3>
         This is the disappearing element:<br>
     </h3>
-    <button onclick="style.display = 'none'">Disappear</button>
+    <script>
+        function makeDisappear() {
+           document.getElementById("my-div").style.display = "none";
+        }
+      </script>
+      <button onclick="makeDisappear()">Disappear</button>
+      <div id="my-div"></div>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
     </p>
