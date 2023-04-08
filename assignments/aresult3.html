@@ -6,21 +6,17 @@
     </h1>
     <h3>
         This is the automatic clock:<br>
-        <strong>
-            <script>
-                setInterval("document.getElementById('autoTime').innerHTML = Date()", 1000);
-            </script>
-            <p id="autoTime"></p>
-        </strong>
+        <script>
+            setInterval("document.getElementById('autoTime').innerHTML = Date()", 1000);
+        </script>
+        <p id="autoTime"></p>
     </h3>
     <h3>
         This is the manual clock:<br>
-        <strong>
-            <button type="button" onclick="document.getElementById('manualTime).innerHTML = Date()">
-                Display Date and Time.
-            </button>
-            <p id="manualTime"></p>
-        </strong>
+        <button type="button" onclick="document.getElementById('manualTime).innerHTML = Date()">
+            Display Date and Time.
+        </button>
+        <p id="manualTime"></p>
     </h3>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
