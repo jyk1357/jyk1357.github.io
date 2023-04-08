@@ -24,10 +24,14 @@
     </h3>
     <script>
         function makeDisappear() {
-           document.getElementById("my-div").style.display = "none";
+            document.getElementById("my-div").style.display = "none";
+        }
+        function makeReappear() {
+            document.getElementById("my-div").style.display = "block";
         }
       </script>
       <button onclick="makeDisappear()">Disappear</button>
+      <button onclick="makeReappear()">Show</button>
       <div id="my-div"></div>
     <p>
         Go Back: <a href="./ainstruct3.html">Assignment 3 Instructions</a>
