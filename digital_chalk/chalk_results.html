@@ -3,8 +3,23 @@
         <head>
         <title>Digital Chalkboard Results</title>
         <meta charset="utf-8">
-        <script type = "text/javascript" src="lastitem.js"></script>
-        <script type = "text/javascript" src="lastinput.js"></script>
+        <script>
+            function lastItem(input) {
+                var temp = [];
+                if (Array.isArray(input)) {
+                    for (let i = 0; i < input.length; i++) {
+                        for (let j = 0; j < input.length; j++) {
+                            if (input[i] < input[j]) {
+                                temp = input[j];
+                                input[j] = input[i];
+                                input[i] = temp;
+                            }
+                        }
+                    }
+                    document.write(input[input.length - 1]);
+                }
+            }
+        </script>
     </head>
     <body>
         <p>
