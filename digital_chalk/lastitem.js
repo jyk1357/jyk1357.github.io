@@ -10,6 +10,6 @@ function lastItem(input) {
                 }
             }
         }
-        return input[input.length - 1];
+        document.write(input[input.length - 1]);
     }
 }
