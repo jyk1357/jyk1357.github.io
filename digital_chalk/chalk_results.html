@@ -24,12 +24,16 @@
         Digital Chalkboard Results
     </h1>
         <p>
+            Click the following button to see the list of "Watermelon", "Apple", "Orange", and "Kiwi" to be
+            sorted alphabetically, with the last alphabetical item also being shown<br>
+        </p>
+        <input type = "button" onclick = "lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi'])" 
+        value = "Last Item">
+        <p>
             Click the following button to be prompted for a fruit, animal, state, and country.<br>
             This inputed list will then become sorted alphabetically, 
             with the last alphabetical item also being shown<br>
         </p>
-        <p id="last-item"></p>
-        <input type = "button" onclick = "lastItem()" 
-        value = "Sort">
+        <input type = "button" onclick = "alphaList()" value = "Sort">
     </body>
 </html>
