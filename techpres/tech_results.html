@@ -7,10 +7,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="digital_chalk.js"></script>
     </head>
     <body>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -25,60 +24,15 @@
         Digital Chalkboard Results
     </h1>
     <div class="container">
-        <div class="row">
-          <div class="col-sm-6 text-center">
-            <h3>Bubble Chart</h3>
-            <script>
-                var popCanvas = document.getElementById("popChart");
-                Chart.defaults.global.defaultFontFamily = "Lato";
-                Chart.defaults.global.defaultFontSize = 18;
-                var popData = {
-                datasets: [{
-                    label: ['Deer Population'],
-                    data: [{
-                    x: 100,
-                    y: 0,
-                    r: 10
-                    }, {
-                    x: 60,
-                    y: 30,
-                    r: 20
-                    }, {
-                    x: 40,
-                    y: 60,
-                    r: 25
-                    }, {
-                    x: 80,
-                    y: 80,
-                    r: 50
-                    }, {
-                    x: 20,
-                    y: 30,
-                    r: 25
-                    }, {
-                    x: 0,
-                    y: 100,
-                    r: 5
-                    }],
-                    backgroundColor: "#FF9966"
-                }]
-                };
-
-                var bubbleChart = new Chart(popCanvas, {
-                type: 'bubble',
-                data: popData
-                });
-            </script>
-            <p>
-                <canvas id="popChart" width="600" height="400"></canvas>
-            </p>
-          </div>
-          <div class="col-sm-6 text-center">
-            <h3>Scatter Chart</h3>
-            <p>
-              <a href="./digital_chalk/chalk_instruct.html">Digital Chalkboard Assignment</a>
-            </p>
-          </div>
+        <h3>Bubble Chart</h3>
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="position: relative; height: 80vh; width: 80vw;">
+            <canvas id="bubChart"></canvas>
         </div>
-      </div>
+        <h3>Scatter Chart</h3>
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="position: relative; height: 80vh; width: 80vw;">
+            <canvas id="scatterChart"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="bubble.js"></script>
+    <script type="text/javascript" src="scatter.js"></script>
 </html>

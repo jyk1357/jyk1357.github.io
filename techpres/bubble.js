@@ -1,7 +1,7 @@
-var popCanvas = document.getElementById("popChart");
+var bubCanvas = document.getElementById("bubChart");
 
-Chart.defaults.global.defaultFontFamily = "Lato";
-Chart.defaults.global.defaultFontSize = 18;
+Chart.defaults.font.family = "Helvetica Neue";
+Chart.defaults.font.size = 18;
 
 var popData = {
   datasets: [{
@@ -35,7 +35,7 @@ var popData = {
   }]
 };
 
-var bubbleChart = new Chart(popCanvas, {
+var bubChart = new Chart(bubCanvas, {
   type: 'bubble',
   data: popData
 });
