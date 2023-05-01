@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <title>Assignment 5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="../index">Home</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../contact">Contact</a></li>
+            <li class="active"><a href="../courses">Coursework</a></li>
+          </ul>
+        </div>
+    </nav>
+    <h1>
+        Assignment 5 Instructions
+    </h1>
+    <h3>
+        Create an XML stylesheet using Oxygen.<br>
+    </h3>
+    <p>
+        What to submit: your XSLT file.
+        &emsp; Transform the XML from the following OCHRE API call: 
+        https://pi.lib.uchicago.edu/1001/org/ochre/24fdf4f5-0426-4715-86f2-5ba7331ff093<br>
+        &emsp; Your stylesheet should have modularized templates for at least the following 
+        child nodes under the <ochre> node in the XML document:<br>
+        &emsp;&emsp;/metadata<br>
+        &emsp;&emsp;/availability<br>
+        &emsp;&emsp;/spatialUnit<br>
+        &emsp;&emsp;&emsp;&emsp;/identification<br>
+        &emsp;&emsp;&emsp;&emsp;/description<br>
+        &emsp;&emsp;&emsp;&emsp;/coordinates (use leaflet to create a map with the coordinate)<br>
+        &emsp;&emsp;//properties<br>
+        &emsp;&emsp;&emsp;&emsp; NOTE: the properties are arranged recursively in the XML. 
+        Write a template that can handle all properties regardless of how deep 
+        the recursion goes in the XML hierarchy.<br>
+        &emsp;Produce an HTML page that implements Bootstrap styling. 
+        Below is the official publication page for this item, which includes 
+        more than what you are asked to include.<br>
+    <p>
+        Results: <a href="./aresult5.html">Assignment 5</a>
+    </p>
+</html>

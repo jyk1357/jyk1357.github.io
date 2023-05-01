@@ -23,28 +23,42 @@
         Assignment 4 Instructions
     </h1>
     <h3>
-        Create an XML stylesheet using Oxygen.<br>
+        Update your GitHub Pages Site<br>
     </h3>
     <p>
-        What to submit: your XSLT file.
-        &emsp; Transform the XML from the following OCHRE API call: 
-        https://pi.lib.uchicago.edu/1001/org/ochre/24fdf4f5-0426-4715-86f2-5ba7331ff093<br>
-        &emsp; Your stylesheet should have modularized templates for at least the following 
-        child nodes under the <ochre> node in the XML document:<br>
-        &emsp;&emsp;/metadata<br>
-        &emsp;&emsp;/availability<br>
-        &emsp;&emsp;/spatialUnit<br>
-        &emsp;&emsp;&emsp;&emsp;/identification<br>
-        &emsp;&emsp;&emsp;&emsp;/description<br>
-        &emsp;&emsp;&emsp;&emsp;/coordinates (use leaflet to create a map with the coordinate)<br>
-        &emsp;&emsp;//properties<br>
-        &emsp;&emsp;&emsp;&emsp; NOTE: the properties are arranged recursively in the XML. 
-        Write a template that can handle all properties regardless of how deep 
-        the recursion goes in the XML hierarchy.<br>
-        &emsp;Produce an HTML page that implements Bootstrap styling. 
-        Below is the official publication page for this item, which includes 
-        more than what you are asked to include.<br>
+        Site Details from Digital Chalkboard Lessons
+        &emsp;&emsp;Create a Bootstrap container so the body of the page behaves well.<br>
+        &emsp;&emsp;Create a navigation section. Your choice of style.<br>
+        &emsp;&emsp;Insert a new container and row as the home for four columns.<br>
+        &emsp;&emsp;Add some text to the columns. Cf. https://www.lipsum.com/. Make sure the columns stack on a small screen.<br>
+        &emsp;&emsp;Create an external CSS file to use with this page.<br>
+        &emsp;&emsp;Check out the Bootstrap documentation to find ways to add some spacing between the columns when they stack up.<br>
+        &emsp;&emsp;Use CSS to create a drop capLinks to an external site. for the first letter of each paragraph. 
+        HINT: you can use a pseudo-class called ::first-letter. You'll likely need the following CSS properties 
+        (tweak the values to your liking): color, font-family, font-size, line-height, padding-top, padding-right, padding-left. 
+        You'll also need float:left.<br>
+        &emsp;&emsp;Create a button on your page to launch a function.<br>
+        &emsp;&emsp;Create an external JavaScript file.<br>
+        &emsp;&emsp;Write a function to pop up a simple alert message.<br>
+        &emsp;&emsp;Use an onclick event to invoke your function.<br>
+        &emsp;&emsp;Add some images to your index.html page<br>
+        &emsp;&emsp;Use Bootstrap classesLinks to an external site. to make sure the images behave.<br>
+        &emsp;&emsp;You can decide if you want an image to cover the entire width of the site or sit inside a column.<br>
+        &emsp;&emsp;You can decide if you want to use a Bootstrap carousel or a simple div.<br>
+        &emsp;&emsp;Make sure the images adjust when the page resizes.<br>
+        &emsp;&emsp;Add a bootstrap footerLinks to an external site.<br>
+        &emsp;&emsp;Need a model for the footer? Check out the RCC site.<br>
+        &emsp;&emsp;Consider hiding the footer on smaller screens.<br>
+        &emsp;&emsp;Write a function that takes one parameter.<br>
+        &emsp;&emsp;The parameter will be an array; see the sample array.<br>
+        Other Content to Include
+        &emsp;&emsp;The parseArray() function that outputs a sorted array based on input
+        &emsp;&emsp;The Wikipedia API
+        &emsp;&emsp;A Map API
+        &emsp;&emsp;The OCHRE API that produces a table of two columns as shown in the videos
     <p>
-        Results: <a href="./aresult4.html">Assignment 4</a>
+        Results:<br>
+        <a href="./aresult4map.html">Assignment 4 Map</a>
+        <a href="./aresult4wiki.html">Assignment 4 Wikipedia</a>
     </p>
 </html>
