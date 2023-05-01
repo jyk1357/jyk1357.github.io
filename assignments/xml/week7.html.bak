@@ -1,0 +1,74 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XSL Stylesheet</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+   <body>
+      <div class="container-fluid p-5 bg-danger text-black text-center">
+         <h1>
+            OCHRE/RSTI
+            </h1>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col text-center">
+               <h3>Identification</h3>
+               
+               RS 13.012
+               
+               <br></div>
+            <div class="col text-center">
+               <h3>Description</h3>
+               Tablet, Alphabetic Ugaritic
+               <br></div>
+            <div class="col text-center">
+               <h3>Coordinates</h3>
+               
+               
+               Registered item
+               
+               
+               RS 13.012
+               
+               
+               35.602059
+               
+               
+               35.785487
+               
+               
+               <br></div>
+            <div class="col text-center">
+               <h3>Metadata</h3>
+               <div class="container">
+                  <div class="row">
+                     <div class="col text-center">Dataset: 
+                        OCHRE/RSTI
+                        </div>
+                     <div class="col text-center">Publisher: 
+                        OCHRE
+                        </div>
+                     <div class="col text-center">Description: 
+                        Ras Shamra Tablet Inventory
+                        </div>
+                     <div class="col text-center">Identifier: 
+                        https://pi.lib.uchicago.edu/1001/org/ochre/24fdf4f5-0426-4715-86f2-5ba7331ff093
+                        </div>
+                     <div class="col text-center">Language: 
+                        en
+                        </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col text-center">
+               <h3>Availability</h3>
+               
+               Creative Commons Attribution-NonCommercial-ShareAlike
+               
+               <br></div>
+         </div>
+      </div>
+   </body>
+</html>

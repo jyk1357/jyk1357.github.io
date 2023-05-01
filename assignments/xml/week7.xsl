@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title>XSL Stylesheet</title>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"/>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/>
+            </head>
+            <body>
+                <xsl:apply-templates/>
+            </body>
+        </html>
+    </xsl:template>
+    <xsl:template match="ochre">
+        <div class="container-fluid p-5 bg-danger text-black text-center">
+            <h1>
+                <xsl:value-of select="metadata/dataset"
+                    xmlns:ino="http://namespaces.softwareag.com/tamino/response2"
+                    xmlns:xq="http://namespaces.softwareag.com/tamino/XQuery/result"/>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3>Identification</h3>
+                    <xsl:value-of select="spatialUnit/identification"
+                        xmlns:ino="http://namespaces.softwareag.com/tamino/response2"
+                        xmlns:xq="http://namespaces.softwareag.com/tamino/XQuery/result"/>
+                    <br/>
+                </div>
+                <div class="col text-center">
+                    <h3>Description</h3>
+                    <xsl:value-of select="spatialUnit/description"
+                        xmlns:ino="http://namespaces.softwareag.com/tamino/response2"
+                        xmlns:xq="http://namespaces.softwareag.com/tamino/XQuery/result"/>
+                    <br/>
+                </div>
+                <div class="col text-center">
+                    <h3>Coordinates</h3>
+                    <xsl:value-of select="spatialUnit/coordinates"
+                        xmlns:ino="http://namespaces.softwareag.com/tamino/response2"
+                        xmlns:xq="http://namespaces.softwareag.com/tamino/XQuery/result"/>
+                    <br/>
+                </div>
+                <div class="col text-center">
+                    <h3>Metadata</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <xsl:text>Dataset: </xsl:text>
+                                <xsl:value-of select="metadata/dataset"/>
+                            </div>
+                            <div class="col text-center">
+                                <xsl:text>Publisher: </xsl:text>
+                                <xsl:value-of select="metadata/publisher"/>
+                            </div>
+                            <div class="col text-center">
+                                <xsl:text>Description: </xsl:text>
+                                <xsl:value-of select="metadata/description"/>
+                            </div>
+                            <div class="col text-center">
+                                <xsl:text>Identifier: </xsl:text>
+                                <xsl:value-of select="metadata/identifier"/>
+                            </div>
+                            <div class="col text-center">
+                                <xsl:text>Language: </xsl:text>
+                                <xsl:value-of select="metadata/language"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <h3>Availability</h3>
+                    <xsl:value-of select="spatialUnit/availability"
+                        xmlns:ino="http://namespaces.softwareag.com/tamino/response2"
+                        xmlns:xq="http://namespaces.softwareag.com/tamino/XQuery/result"/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="text()"/>
+</xsl:stylesheet>
