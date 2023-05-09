@@ -19,7 +19,7 @@ function wikiAPI() {
             var newAnchor = document.createElement("a");
             newAnchor.href = pageURL + pages[i].pageid;
             newAnchor.className = 'd-block';
-            newAnchor.innerText = pages[i].title + "Hello";
+            newAnchor.innerHTML = pages[i].title;
             document.getElementById("wiki").appendChild(newAnchor);
         }
     }
