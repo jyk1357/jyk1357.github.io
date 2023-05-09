@@ -17,7 +17,6 @@ function wikiAPI() {
             newDiv.innerText = pages[i].title; */
             var pageURL = "https://en.wikipedia.org/?curid="
             var newAnchor = document.createElement("a");
-            newAnchor.setAttribute('class', 'row h4')
             newAnchor.href = pageURL + pages[i].pageid;
             newAnchor.className = 'd-block';
             newAnchor.innerText = pages[i].title;
