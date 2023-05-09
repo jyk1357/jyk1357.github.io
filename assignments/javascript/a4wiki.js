@@ -21,6 +21,7 @@ function wikiAPI() {
             newAnchor.className = 'd-block';
             newAnchor.innerText = pages[i].title;
             document.getElementById("wiki").appendChild(newAnchor);
+            console.log("<br>")
         }
     }
 
