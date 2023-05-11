@@ -11,7 +11,7 @@ function wikiAPI() {
         // console.log(wikiObject.query.pages);
         var pages = wikiObject.query.pages;
         for (var i in pages) {
-            /*  var newDiv = document.createElement("div");
+            /* var newDiv = document.createElement("div");
             newDiv.setAttribute('class', 'row h4');
             document.getElementById("wiki").appendChild(newDiv);
             newDiv.innerText = pages[i].title; */
@@ -20,6 +20,7 @@ function wikiAPI() {
             newAnchor.href = pageURL + pages[i].pageid;
             newAnchor.className = 'd-block';
             newAnchor.innerText = pages[i].title;
+            document.getElementById("wiki").appendChild(newAnchor);
         }
     }
 
