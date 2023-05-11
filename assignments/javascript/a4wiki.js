@@ -20,7 +20,6 @@ function wikiAPI() {
             newAnchor.href = pageURL + pages[i].pageid;
             newAnchor.className = 'd-block';
             newAnchor.innerText = pages[i].title;
-            document.getElementById("wiki").appendChild(newAnchor);
         }
     }
 
